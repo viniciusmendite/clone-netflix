@@ -64,6 +64,15 @@ export default () => {
         <br />
         Dados pegos do site Themoviedb.org
       </footer>
+
+      {movieList.length <= 0 && (
+        <div className="loading">
+          <img
+            src="https://www.filmelier.com/pt/br/news/wp-content/uploads/2020/03/netflix-loading.gif"
+            alt="Carregando"
+          />
+        </div>
+      )}
     </div>
   );
 };
