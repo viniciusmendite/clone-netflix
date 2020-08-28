@@ -2,7 +2,7 @@ const API_KEY = process.env.REACT_APP_API_KEY;
 const API_BASE = process.env.REACT_APP_API_BASE;
 
 const basicFetch = async (endpoint) => {
-  const req = await fetch(`${API_BASE}${endpoint}`, { mode: 'no-cors' });
+  const req = await fetch(`${API_BASE}${endpoint}`);
   const json = await req.json();
   return json;
 };
