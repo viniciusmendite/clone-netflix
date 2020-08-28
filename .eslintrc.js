@@ -25,5 +25,7 @@ module.exports = {
     "no-param-reassign": "off",
     "react/no-array-index-key": "off",
     "react/prop-types": "off",
+    "no-restricted-syntax": "off",
+    "guard-for-in": "off",
   }
 }
