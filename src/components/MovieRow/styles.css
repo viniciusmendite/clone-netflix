@@ -49,3 +49,10 @@ transform: scale(1);
 .movieRow:hover .movieRow--right {
   opacity: 1;
 }
+
+@media (max-width:760px) {
+  .movieRow--left,
+  .movieRow--right {
+    opacity: 1;
+  }
+}
