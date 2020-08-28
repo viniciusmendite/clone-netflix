@@ -2,10 +2,19 @@ import React from 'react';
 
 import './styles.css';
 
+import NavigationBeforeIcon from '@material-ui/icons/NavigateBefore';
+import NavigationNextIcon from '@material-ui/icons/NavigateNext';
+
 export default ({ title, items }) => {
   return (
     <div className="movieRow">
       <h2>{title}</h2>
+      <div className="movieRow--left">
+        <NavigationBeforeIcon style={{ fontSize: 50 }} />
+      </div>
+      <div className="movieRow--right">
+        <NavigationNextIcon style={{ fontSize: 50 }} />
+      </div>
       <div className="movieRow--listarea">
         <div className="movieRow--list">
           {items.results.length > 0 &&
