@@ -31,8 +31,8 @@ export default () => {
 
   return (
     <div className="page">
+      {featuredData && <FeaturedMovie item={featuredData} />}
       <section className="lists">
-        {featuredData && <FeaturedMovie item={featuredData} />}
         {movieList.map((item, index) => (
           <MovieRow key={index} title={item.title} items={item.items} />
         ))}
